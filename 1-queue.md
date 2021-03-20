@@ -122,7 +122,7 @@ class vaccination_Queue:
     def get_queue(self):
         return self.queue
 ```
-To prove our code is working. We going to pretende that there are four people registering to this list in the next order: Christian, David, Daniel, Oscar.
+To prove our code is working. We going to pretend that there are four people registered in this list in the next order: Christian, David, Daniel, Oscar.
 
 Then the code for this part would be the following:
 
@@ -141,15 +141,15 @@ The result in the terminal would be this:
 Test 1
 ['Christian', 'David', 'Daniel', 'Oscar']
 ```
-Now we are going to say that the vaccine is already for the peple. Acording qith the order in the list, Christian should be the first one to be vaccinated because He came first.
+Now we are going to say that the vaccine is already for the people. According with the order in the list, Christian should be the first one to be vaccinated because He came first.
 
 ```python
 name = queue.dequeue()
 print(queue.get_queue())
 ```
-For this process we use Dequeue function, which is going to take the fisrt item in the list and then it will deleted from the list. 
+For this process, we use the Dequeue function, which is going to take the first item in the list, and then it will be deleted from the list. 
 
-Finally the list would look like this:
+Finally, the list would look like this:
 
 ```bash
 Test 1
