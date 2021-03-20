@@ -1,11 +1,13 @@
 
 
-import queue
 
-q = queue.Queue()
+import queue  
+lifo = queue.LifoQueue()
 
-songs = ['First-song', 'Second-song', 'Third-song', 'Fourth-song']
+lifo.put('First-process')
+lifo.put('Second-process')
+lifo.put('Third-process')
 
-for i in songs:
-    q.put(i)
-    print(q.get())
+for i in range(3):
+    print(lifo.get())
+
