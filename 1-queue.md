@@ -56,14 +56,18 @@ Second-process
 Third-process
 ```
 # Enqueue
-Enqueue is one of the operations we can use in Qqueue ueues. Is nothing but inserting data in to the queue, specificaly in to the back of the queue.
+Enqueue is one of the operations we can use in Queue. Is nothing but *inserting data into the queue*, specifically into the back of the queue.
 
-In we take the example of the music streaming app. Every time we add aa son to the list, it is basically doing an Enqueue process as the following images shows:
+If we take the example of the music streaming app. Every time we add a song to the list, it is basically doing an Enqueue process as the following images show:
 
-![Queue](queue-song.png)
+![Queue](queue-enqueue.png)
 
 # Dequeue
-Dequeue is another operation that we can use in queues. Dequeue is delete data or item from the Queue, scepificaly deliting from the front of the Queue.
+Dequeue is another operation that we can use in queues. Dequeue *deletes data or items from the Queue*, specifically deleting from the front of the Queue.
+
+Taking the example. We can see that the first item is playing right now and then when this process is finished the song is dequeue. It is to say, this first element is removed from the list. 
+
+![Queue](queue-dequeue.png)
 # Example
 # Problem to Solve
 
