@@ -149,7 +149,7 @@ print(queue.get_queue())
 ```
 For this process, we use the Dequeue function, which is going to take the first item in the list, and then it will be deleted from the list. 
 
-Finally, the list would look like this:
+Finally, the list should look like this:
 
 ```bash
 Test 1
@@ -159,6 +159,29 @@ Here, you can download this code and practice. [Example](queue-example.py)
 
 
 
-# Problem to Solve
+# Problem to Solve: Add song to a playlist
+
+This problem to solve is a common program we find in many playlist apps. The purpose of this problem is to practice and apply the concepts already seen in this document.
+
+You can download the template here: [Template](problem-template.py)
+
+This program implements Enqueue and Dequeue functions. Here are de detailed requirements:
+
+- Prompt the user for a song. album and genre
+- Add this three characteristic to a Queue (Enqueue)
+- The Dequeue function should remove songs from the font of the list
+- The program should display the song that is now playing.
+
+Download the following code and load it into your code editor. This document will also provide more details.
+
+You can test your program with the following scenarios:
+- Test 1: Add two songs and display the current song playing. It should display the first song in the list as a "now playing" song
+- Test 2: No add any song so, it should display a "No songs in the list" message
+- Test 3: Add two songs and remove one. It should display the second song in the list as now playing song.
+- Test 4: Add two songs and remove two. It should display "No songs in the list"
+
+
+
+You can check your code with the solution here: [Solution](problem-solution.py)
 
 [Back to Welcome Page](data_structure_tutorial.md)
