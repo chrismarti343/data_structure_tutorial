@@ -60,7 +60,10 @@ Enqueue is one of the operations we can use in Queue. Is nothing but *inserting 
 
 If we take the example of the music streaming app. Every time we add a song to the list, it is basically doing an Enqueue process as the following image shows:
 
+
 ![Queue](queue-enqueue.png)
+
+To Enqueue an element we use: *append method*
 
 # Dequeue
 Dequeue is another operation that we can use in queues. Dequeue *deletes data or items from the Queue*, specifically deleting from the front of the Queue.
@@ -69,7 +72,92 @@ Taking the example. We can see that the first item is playing right now and then
 
 ![Queue](queue-dequeue.png)
 
+To Dequeue an element we use: *pop method*
 
-# Example
+It is important to know that we should specify that we are going to pop the fisrt element as the following:
+
+```python
+queue=[]
+queue.append(10)
+queue.append(20)
+queue.append(30)
+
+queue.pop(0)
+queue
+```
+As we see in this example we insert elemts using append and we deleted the first method by usong pop(0)/ The result will be the following.
+
+```bash
+[20,30]
+```
+
+# Example: Vaccination List
+
+In the example below, we will write a simple common example we can see nowadays with the process of registering for a vaccination. First of all, we register on a web page so our names are save in a list. When the vaccine is available they would call from the first one on the list and every time they are already vaccinated thee names are removed from the list. This process helps the people to follow an order so, the first one who registered on the list would be called first. This is the process of this task:
+
+- Register
+- Name is appended in a list 
+- When the vaccine is available they start to vaccinate people
+- First one who registered is the first one to vaccinate and so on.
+- The name is removed from the list.
+- Do the same with the next people in the list, in this case, the second name in the list.
+
+```python
+class vaccination_Queue:
+
+    def __init__(self):
+        self.queue = []
+
+    def enqueue(self,name):
+        self.queue.append(name)
+
+    def dequeue(self):
+        if len(self.queue) <= 0:
+            raise IndexError()
+
+        name = self.queue[0]
+        del self.queue[0]
+        return name
+
+    def get_queue(self):
+        return self.queue
+```
+To prove our code is working. We going to pretende that there are four people registering to this list in the next order: Christian, David, Daniel, Oscar.
+
+Then the code for this part would be the following:
+
+```python
+print('Test 1')
+queue = vaccination_Queue()
+queue.enqueue('Christian')
+queue.enqueue('David')
+queue.enqueue('Daniel')
+queue.enqueue('Oscar')
+print(queue.get_queue())
+```
+The result in the terminal would be this:
+
+```bash
+Test 1
+['Christian', 'David', 'Daniel', 'Oscar']
+```
+Now we are going to say that the vaccine is already for the peple. Acording qith the order in the list, Christian should be the first one to be vaccinated because He came first.
+
+```python
+name = queue.dequeue()
+print(queue.get_queue())
+```
+For this process we use Dequeue function, which is going to take the fisrt item in the list and then it will deleted from the list. 
+
+Finally the list would look like this:
+
+```bash
+Test 1
+['David', 'Daniel', 'Oscar']
+```
+
+
+
 # Problem to Solve
+
 [Back to Welcome Page](data_structure_tutorial.md)
