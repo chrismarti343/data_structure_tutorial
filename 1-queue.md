@@ -7,7 +7,7 @@ The most used type of queues are the following:
 - LIFO
   
 # FIFO rule
-FIFO stands for first in, first out. Basically FIFO gets the first item that first was put in.
+FIFO stands for first in, first out. Basically *FIFO gets the first item that first was put in*.
 
 A common problem of using FIFO we can find is in the music streaming apps. When we add a song to our list and then we play the list, the app will play from the first songs to the last one in th list.                              
 
@@ -33,9 +33,9 @@ Third-song
 ```
 
 # LIFO rule
-LIFO stands last in, first out. In this methods the last item in the list is the first item to be precessed, and the first element would be processes at the end.       
+LIFO stands last in, first out. In this method *the last item in the list is the first item to be precessed*, and the first element would be processes at the end.       
 
-A common problem we find in the real world is when whe are using our computer. When the user waht to redo a proccess they re basically using LIFO method. The next emple shows how this process is perfomed:
+A common problem we find in the real world is when we are using our computer. When the user wants to redo a process they are basically using the LIFO method. When we type Ctr+Z (in Windows) to redo, so the computer would give us *the last process we were doing*. The next example shows how this process is performed:
 
 ```python
 import queue  
@@ -58,7 +58,7 @@ Third-process
 # Enqueue
 Enqueue is one of the operations we can use in Queue. Is nothing but *inserting data into the queue*, specifically into the back of the queue.
 
-If we take the example of the music streaming app. Every time we add a song to the list, it is basically doing an Enqueue process as the following images show:
+If we take the example of the music streaming app. Every time we add a song to the list, it is basically doing an Enqueue process as the following image shows:
 
 ![Queue](queue-enqueue.png)
 
@@ -68,6 +68,8 @@ Dequeue is another operation that we can use in queues. Dequeue *deletes data or
 Taking the example. We can see that the first item is playing right now and then when this process is finished the song is dequeue. It is to say, this first element is removed from the list. 
 
 ![Queue](queue-dequeue.png)
+
+
 # Example
 # Problem to Solve
-
+[Back to Welcome Page](data_structure_tutorial.md)
